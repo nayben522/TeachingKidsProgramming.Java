@@ -11,10 +11,12 @@ public class SimpleSquare
     Tortoise.show();
     //  Make the tortoise move as fast as possible --#6
     //  Do the following 4 times --#5.1
-    //      Change the color of the line the tortoise draws to "blue" --#4
-    Tortoise.setPenColor(Color.blue);
-    Tortoise.move(50);
-    Tortoise.turn(90);
+    for (int i = 1; i <= 4; i++)
+    {
+      Tortoise.setPenColor(Color.blue);
+      Tortoise.move(50);
+      Tortoise.turn(90);
+    }
     //  Repeat --#5.2
   }
 }
