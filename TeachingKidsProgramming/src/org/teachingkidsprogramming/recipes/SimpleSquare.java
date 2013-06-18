@@ -1,7 +1,6 @@
 package org.teachingkidsprogramming.recipes;
 
-import java.awt.Color;
-
+import org.teachingextensions.logo.Colors;
 import org.teachingextensions.logo.Tortoise;
 
 public class SimpleSquare
@@ -10,13 +9,13 @@ public class SimpleSquare
   {
     Tortoise.show();
     Tortoise.setSpeed(10);
-    int sides = 4;
+    int sides = 17;
     for (int i = 1; i <= sides; i++)
     {
-      Tortoise.setPenColor(Color.blue);
-      Tortoise.setPenWidth(2);
-      Tortoise.move(50);
-      Tortoise.turn(360 / sides);
+      Tortoise.setPenColor(Colors.getRandomColor());
+      Tortoise.setPenWidth(7);
+      Tortoise.move(17);
+      Tortoise.turn(360.0 / sides);
     }
   }
 }
