@@ -1,11 +1,13 @@
 package org.teachingkidsprogramming.recipes;
 
+import org.teachingextensions.logo.Tortoise;
 
 public class Spiral
 {
   public static void main(String[] args)
   {
     //    Show the tortoise --#1
+    Tortoise
     //    Make the tortoise go as fast as possible --#4
     //    Add Blue Violet to the Color Wheel --#6
     //    Add Violet to the Color Wheel --#8
