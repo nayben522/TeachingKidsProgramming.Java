@@ -1,14 +1,19 @@
 package org.teachingkidsprogramming.recipes;
 
+import org.teachingextensions.logo.Tortoise;
+
 public class DigiFlower
 {
   public static void main(String[] args)
   {
-    //    Show the tortoise --#1
+    Tortoise.show();
     //    Make the tortoise move as fast as possible --#7
+    Tortoise.move(10);
     //    Make the background silver --#8
     //    Make the line the tortoise draws 3 pixels wide --#20
+    Tortoise.setPenWidth(3);
     //    createColorPalette (recipe below) --#9
+    //    Colors.Reds.Red;
     //    Do the following 15 times --#19
     //      drawOctogon (recipe below) --#10
     //      Turn the tortoise 1/15th of 360 degrees to the right --#18
