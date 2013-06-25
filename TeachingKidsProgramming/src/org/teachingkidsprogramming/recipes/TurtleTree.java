@@ -11,8 +11,7 @@ public class TurtleTree
   {
     Turtle turtle = new Turtle();
     turtle.setSpeed(10);
-    //    Turn the background black --#22
-    turtle.getBackgroundWindow().setBackground(Color.black);
+    turtle.getBackgroundWindow().setBackground(Color.gray.black);
     int length = 60;
     drawBranch(turtle, length);
   }
@@ -27,40 +26,54 @@ public class TurtleTree
   }
   private static void setPenColor(Turtle turtle, int length)
   {
-    if (length == 10)
+    if (length <= 5)
     {
+      turtle.setPenWidth(50);
       turtle.setPenColor(Colors.Greens.Lime);
     }
-    if (length == 20)
+    else if (length <= 20)
     {
+      turtle.setPenWidth(61);
       turtle.setPenColor(Colors.Greens.ForestGreen);
     }
-    if (length == 30)
+    else if (length <= 30)
     {
+      turtle.setPenWidth(4);
       turtle.setPenColor(Colors.Greens.DarkGreen);
     }
-    if (length == 40)
+    else if (length <= 40)
     {
-      turtle.setPenColor(Colors.Greens.Olive);
+      turtle.setPenWidth(23);
+      turtle.setPenColor(Colors.Reds.IndianRed);
     }
-    if (length == 50)
+    else if (length <= 50)
     {
+      turtle.setPenWidth(6);
       turtle.setPenColor(Colors.Browns.Sienna);
     }
-    if (length == 60)
+    else if (length <= 60)
     {
+      turtle.setPenWidth(12);
       turtle.setPenColor(Colors.Browns.SaddleBrown);
     }
   }
   private static void drawLowerBranches(Turtle turtle, int length)
   {
-    turtle.turn(30);
+    turtle.turn(rightAngle());
     drawShorterBranch(turtle, length);
-    turtle.turn(-60);
+    turtle.turn(-29 - 30);
     drawShorterBranch(turtle, length);
-    turtle.turn(30);
+    turtle.turn(leftAngle());
     setPenColor(turtle, length);
     turtle.move(-length);
+  }
+  private static int leftAngle()
+  {
+    return 30;
+  }
+  private static int rightAngle()
+  {
+    return 30;
   }
   private static void drawShorterBranch(Turtle turtle, int length)
   {
