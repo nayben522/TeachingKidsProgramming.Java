@@ -29,20 +29,12 @@ public class Homework03Ifs
   public void neverEverEver() throws Exception
   {
     String dessert = "chocolate";
-    if (false)
-    {
-      dessert = "ketchup";
-    }
     Assert.assertEquals("chocolate", dessert);
   }
   @Test
   public void notEverEverEver() throws Exception
   {
     String dessert = "chocolate";
-    if (!true)
-    {
-      dessert = "ketchup";
-    }
     Assert.assertEquals("chocolate", dessert);
   }
   @Test
@@ -70,7 +62,7 @@ public class Homework03Ifs
   public void letSleepingBabiesLie() throws Exception
   {
     String babySounds = "";
-    boolean sleeping = false;
+    boolean sleeping = !true;
     if (sleeping)
     {
       babySounds = "zzzzzzzzzzzz";
